@@ -1125,7 +1125,9 @@
                     const sectionHeader = document.createElement('h2');
                     sectionHeader.className = 'section-header';
                     sectionHeader.id = sectionId;
-                    sectionHeader.textContent = currentSection;
+                    sectionHeader.textContent = currentSection === "EBM Disease Screening Session" 
+    ? "EBM Disease Screening Session (for module exam only)" 
+    : currentSection;
                     quizRoot.appendChild(sectionHeader);
 
                     const navBtn = document.createElement('button');
