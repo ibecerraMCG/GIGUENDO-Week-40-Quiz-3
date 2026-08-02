@@ -1394,7 +1394,7 @@ function save(key, val) { try { localStorage.setItem(key, JSON.stringify(val)); 
 const sections = [];
 quizData.forEach(q => { if (!sections.includes(q.section)) sections.push(q.section); });
 function shortLabel(name) {
-    const map = {};
+    const map = {"Renal Handling of K, Ca, and PO4":"Renal K, Ca, & PO4 Handling"};
     return map[name] || name;
 }
 window.__bbShortLabel = shortLabel;
